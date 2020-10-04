@@ -376,7 +376,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Marksman";
+						description="Survivor";
 						isPlayable=1;
 						class Inventory
 						{
