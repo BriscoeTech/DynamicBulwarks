@@ -22,7 +22,7 @@ HOSTILE_LEVEL_2_WHITELIST = ["LIB_GER_rifleman_w","LIB_GER_ober_grenadier_w","LI
 HOSTILE_LEVEL_3_WHITELIST = ["LIB_GER_ober_rifleman_w","LIB_GER_ober_grenadier_w","LIB_GER_ober_grenadier_w","LIB_GER_LAT_Rifleman_w","LIB_GER_ober_rifleman_w","LIB_GER_medic_w","LIB_GER_unterofficer_w","LIB_GER_Scout_mgunner_w"];
 HOSTILE_LEVEL_4_WHITELIST = ["LIB_GER_AT_grenadier_w","LIB_GER_ober_grenadier_w","LIB_GER_Scout_sniper_w","LIB_GER_Mgunner_w","LIB_GER_LAT_Rifleman_w","LIB_GER_AT_soldier_w"];
 DEFECTOR_CLASS_WHITELIST = ["LIB_US_Sniper_w","LIB_US_AT_soldier_w","LIB_US_Smgunner_w","LIB_US_Grenadier_w","LIB_US_Mgunner_w"];
-PARATROOP_CLASS_WHITELIST = ["LIB_US_AT_soldier_w"];
+PARATROOP_CLASS_WHITELIST = ["LIB_US_Sniper_w","LIB_US_AT_soldier_w","LIB_US_Smgunner_w","LIB_US_Grenadier_w","LIB_US_Mgunner_w"];
 //Vehicle Whitelist
 /* 0 = Adds Whitelist Vehicles to spawn. */
 /* 1 = Only Whitelist Vehicles will spawn */
@@ -142,25 +142,26 @@ HOSTILE_ARMOUR_POINT_SCORE = 4;
 //list of special waves you can get early on
 lowSpecialWave_list = [
 	"fogWave",
-	"switcharooWave",
+//	"switcharooWave",
 //  "specCivs",
-	"ptrdWave"
+//	"ptrdWave",
+	"nightWave"
 	];
 //comment out the waves you don't like. Don't forget to remove the , behind the last entry
 //list of all special waves you can get on higher waves
 specialWave_list= [
 //	"specCivs",
-//	"fogWave",
+	"fogWave",
 //	"demineWave",
 	"switcharooWave",
-	"suicideWave",
+//	"suicideWave",
 	"specMortarWave",
 	"nightWave",
 	"defectorWave",
     "mgWave",
     "sniperWave",
-	"flameWave",	//only works if IFA_AIO_LITE loaded
-	"ptrdWave"		//only works if IFA_AIO_LITE loaded
+//	"ptrdWave",		//only works if IFA_AIO_LITE loaded
+	"flameWave"	//only works if IFA_AIO_LITE loaded
 ];
 //starting from this wave the lowSpecialWaveList is used
 lowSpecialWaveStart = 5;

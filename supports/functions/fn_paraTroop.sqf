@@ -71,6 +71,7 @@ _agVehicle setVelocity [
       _unitClass = selectRandom _classList;
       _unit = objNull;
       _unit = coreGroup createUnit [_unitClass, _location vectorAdd [0,0,-2], [], 0.5, "CAN_COLLIDE"];
+	  [_unit] joinSilent coreGroup; // prevent then from killing fellow paratroopers
       mainZeus addCuratorEditableObjects [[_unit], true];
       sleep 0.3;
       waitUntil {!isNull _unit};
