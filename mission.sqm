@@ -16,22 +16,19 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8361.8223,238.18953,10459.675};
-		dir[]={-0.89674747,-0.13088281,0.42279339};
-		up[]={-0.11841238,0.99139166,0.055829324};
-		aside[]={0.42646056,3.4482218e-007,0.90452415};
+		pos[]={2.0857782,11.495975,15.113266};
+		dir[]={0.056839492,-0.59189397,-0.804021};
+		up[]={0.04173946,0.8060081,-0.59042937};
+		aside[]={-0.99751973,6.3562766e-008,-0.070519283};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Characters_F",
-	"A3_Weapons_F_Pistols_P07",
+	"WW2_Assets_c_Characters_Civilians_c_CIV_Civilians",
+	"WW2_Core_c_WW2_EditorPreviews_c",
 	"A3_Weapons_F",
 	"WW2_Assets_c_Weapons_InfantryWeapons_c",
-	"A3_Weapons_F_Items",
-	"A3_Characters_F_Exp_Civil",
-	"A3_Characters_F_Exp",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Structures_F_Naval_Piers",
 	"A3_Ui_F",
@@ -44,29 +41,25 @@ class AddonsMetaData
 		items=8;
 		class Item0
 		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
+			className="WW2_Assets_c_Characters_Civilians_c_CIV_Civilians";
+			name="WW2_Assets_c_Characters_Civilians_c_CIV_Civilians";
 		};
 		class Item1
+		{
+			className="WW2_Core_c_WW2_EditorPreviews_c";
+			name="WW2_Core_c_WW2_EditorPreviews_c";
+		};
+		class Item2
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item2
+		class Item3
 		{
 			className="WW2_Assets_c_Weapons_InfantryWeapons_c";
 			name="WW2_Assets_c_Weapons_InfantryWeapons_c";
-		};
-		class Item3
-		{
-			className="A3_Characters_F_Exp";
-			name="Arma 3 Apex - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
 		};
 		class Item4
 		{
@@ -253,7 +246,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-0.54502392,4.2270803,2.0971518};
+						position[]={3.3793137,4.2270803,8.1436586};
 					};
 					side="West";
 					flags=7;
@@ -261,91 +254,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class handgun
-							{
-								name="hgun_P07_F";
-								class primaryMuzzleMag
-								{
-									name="16Rnd_9x21_Mag";
-									ammoLeft=16;
-								};
-							};
-							class uniform
-							{
-								typeName="U_C_Commoner1_1";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="16Rnd_9x21_Mag";
-										count=2;
-										ammoLeft=16;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-						};
 					};
 					id=10;
-					type="C_man_1_1_F";
-					atlOffset=-117.99436;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02GRE";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					type="LIB_CIV_Citizen_1";
 				};
 				class Item1
 				{
@@ -362,15 +273,14 @@ class Mission
 						isPlayable=1;
 					};
 					id=58;
-					type="C_Man_casual_2_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Citizen_2";
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-5.5642767,4.2270803,2.1952353};
+						position[]={-1.8742304,4.2270803,8.4352989};
 					};
 					side="West";
 					flags=5;
@@ -378,62 +288,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_man_sport_2_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							gps="ItemGPS";
-						};
 					};
 					id=60;
-					type="C_Man_casual_3_F";
-					atlOffset=-117.99436;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02GRE";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					type="LIB_CIV_Citizen_3";
 				};
 				class Item3
 				{
@@ -450,8 +307,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=62;
-					type="C_man_sport_1_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Citizen_4";
 				};
 				class Item4
 				{
@@ -468,8 +324,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=64;
-					type="C_man_sport_2_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Citizen_5";
 				};
 				class Item5
 				{
@@ -486,8 +341,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=66;
-					type="C_man_sport_3_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Citizen_6";
 				};
 				class Item6
 				{
@@ -504,8 +358,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=68;
-					type="C_Man_casual_4_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Citizen_7";
 				};
 				class Item7
 				{
@@ -522,15 +375,14 @@ class Mission
 						isPlayable=1;
 					};
 					id=70;
-					type="C_Man_casual_5_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Citizen_8";
 				};
 				class Item8
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1.9332969,4.2270803,0.48444176};
+						position[]={4.6304727,4.2270803,8.2120218};
 					};
 					side="West";
 					flags=5;
@@ -538,21 +390,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Man_casual_6_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-						};
 					};
 					id=72;
-					type="C_Man_casual_6_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Doctor";
 				};
 				class Item9
 				{
@@ -569,8 +409,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=74;
-					type="C_man_polo_1_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_SchoolTeacher";
 				};
 				class Item10
 				{
@@ -587,57 +426,14 @@ class Mission
 						isPlayable=1;
 					};
 					id=76;
-					type="C_man_polo_2_F";
-					atlOffset=-117.99436;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male05GRE";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					type="LIB_CIV_SchoolTeacher_2";
 				};
 				class Item11
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-2.9890001,4.227437,3.493};
+						position[]={0.90921783,4.2270803,8.2300606};
 					};
 					side="West";
 					flags=5;
@@ -645,70 +441,16 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Man_casual_1_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-						};
 					};
 					id=151;
-					type="C_Man_casual_1_F";
-					atlOffset=-117.994;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03GRE";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					type="LIB_CIV_Assistant";
 				};
 				class Item12
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-3.9309082,4.2270842,4.7786856};
+						position[]={-0.4493314,4.2270803,8.2838478};
 					};
 					side="West";
 					flags=5;
@@ -716,28 +458,16 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Man_casual_2_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-						};
 					};
 					id=153;
-					type="C_Man_casual_2_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Woodlander_1";
 				};
 				class Item13
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-2.219183,4.2270823,5.5217538};
+						position[]={2.2034621,4.2270803,8.1384926};
 					};
 					side="West";
 					flags=5;
@@ -745,21 +475,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Man_casual_3_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-						};
 					};
 					id=155;
-					type="C_Man_casual_3_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Woodlander_2";
 				};
 				class Item14
 				{
@@ -776,8 +494,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=157;
-					type="C_man_sport_1_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Woodlander_3";
 				};
 				class Item15
 				{
@@ -794,15 +511,14 @@ class Mission
 						isPlayable=1;
 					};
 					id=159;
-					type="C_man_sport_2_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Woodlander_4";
 				};
 				class Item16
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={-4.7113595,4.2270803,6.022851};
+						position[]={-3.2910159,4.2270803,8.5355425};
 					};
 					side="West";
 					flags=5;
@@ -810,21 +526,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_man_sport_3_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-						};
 					};
 					id=161;
-					type="C_man_sport_3_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Functionary_1";
 				};
 				class Item17
 				{
@@ -841,8 +545,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=163;
-					type="C_Man_casual_5_F";
-					atlOffset=-117.99435;
+					type="LIB_CIV_Functionary_2";
 				};
 				class Item18
 				{
@@ -852,15 +555,14 @@ class Mission
 						position[]={-1.3185132,4.2270784,6.2217741};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Survivor";
 						isPlayable=1;
 					};
 					id=167;
-					type="C_man_polo_1_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Functionary_3";
 				};
 				class Item19
 				{
@@ -870,15 +572,14 @@ class Mission
 						position[]={-1.411921,4.2270727,1.0481222};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Survivor";
 						isPlayable=1;
 					};
 					id=165;
-					type="C_Man_casual_6_F";
-					atlOffset=-117.99437;
+					type="LIB_CIV_Functionary_4";
 				};
 				class Item20
 				{
@@ -888,15 +589,14 @@ class Mission
 						position[]={-2.3670735,4.2270765,6.7901812};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Survivor";
 						isPlayable=1;
 					};
 					id=169;
-					type="C_Man_casual_1_F";
-					atlOffset=-117.99437;
+					type="LIB_CIV_Villager_1";
 				};
 				class Item21
 				{
@@ -913,8 +613,7 @@ class Mission
 						isPlayable=1;
 					};
 					id=173;
-					type="C_Man_casual_3_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Villager_2";
 				};
 				class Item22
 				{
@@ -924,15 +623,14 @@ class Mission
 						position[]={-6.9956574,4.2270746,3.827522};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Survivor";
 						isPlayable=1;
 					};
 					id=175;
-					type="C_man_sport_2_F";
-					atlOffset=-117.99437;
+					type="LIB_CIV_Villager_3";
 				};
 				class Item23
 				{
@@ -942,15 +640,14 @@ class Mission
 						position[]={-7.2351694,4.2270765,5.9743414};
 					};
 					side="West";
-					flags=5;
+					flags=1;
 					class Attributes
 					{
 						description="Survivor";
 						isPlayable=1;
 					};
 					id=177;
-					type="C_man_sport_3_F";
-					atlOffset=-117.99437;
+					type="LIB_CIV_Villager_4";
 				};
 				class Item24
 				{
@@ -967,15 +664,13 @@ class Mission
 						isPlayable=1;
 					};
 					id=179;
-					type="C_Man_casual_4_F";
-					atlOffset=-117.99436;
+					type="LIB_CIV_Priest";
 				};
 			};
 			class Attributes
 			{
 			};
 			id=0;
-			atlOffset=-117.99436;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1010,7 +705,7 @@ class Mission
 			name="mainZeus";
 			id=116;
 			type="ModuleCurator_F";
-			atlOffset=-128.97581;
+			atlOffset=33.747913;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1100,14 +795,14 @@ class Mission
 				position[]={0,-18.786066,0};
 			};
 			side="Empty";
-			flags=5;
+			flags=1;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=123;
 			type="Land_Pier_Box_F";
-			atlOffset=-118;
+			atlOffset=55.82;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1141,7 +836,7 @@ class Mission
 			type="mil_warning";
 			colorName="ColorRed";
 			id=217;
-			atlOffset=-151.69;
+			atlOffset=-165.73813;
 		};
 		class Item4
 		{
@@ -1153,7 +848,7 @@ class Mission
 			a=50;
 			b=50;
 			id=262;
-			atlOffset=-0.57073593;
+			atlOffset=-184.45824;
 		};
 	};
 };
