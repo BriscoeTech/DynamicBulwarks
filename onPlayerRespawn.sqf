@@ -10,6 +10,11 @@ removeAllWeapons _player:
 removeAllAssignedItems _player;
 //_resp = selectRandom ["G_Respirator_white_F","G_Respirator_blue_F","G_Respirator_yellow_F"];
 //player addGoggles _resp;
+
+// force player to have this uniform and gasmask
+_player addGoggles "G_RegulatorMask_F";
+_player addUniform  "U_C_CBRN_Suit_01_Blue_F";
+
 _player setPosASL ([bulwarkBox] call bulwark_fnc_findPlaceAround);
 
 if(PLAYER_STARTWEAPON) then {
