@@ -8,8 +8,8 @@ removeVest _player;
 removeBackpack _player;
 removeAllWeapons _player:
 removeAllAssignedItems _player;
-_resp = selectRandom ["G_Respirator_white_F","G_Respirator_blue_F","G_Respirator_yellow_F"];
-player addGoggles _resp;
+//_resp = selectRandom ["G_Respirator_white_F","G_Respirator_blue_F","G_Respirator_yellow_F"];
+//player addGoggles _resp;
 _player setPosASL ([bulwarkBox] call bulwark_fnc_findPlaceAround);
 
 if(PLAYER_STARTWEAPON) then {

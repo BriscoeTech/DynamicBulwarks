@@ -16,21 +16,17 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={-9.9095945,11.453233,13.868158};
-		dir[]={0.47779635,-0.36142761,-0.8006804};
-		up[]={0.18521021,0.93239838,-0.31037042};
-		aside[]={-0.85872811,2.7234637e-007,-0.51243758};
+		pos[]={-4.3546686,10.51953,13.942964};
+		dir[]={0.26123524,-0.31580856,-0.91215885};
+		up[]={0.086951256,0.94882065,-0.30360761};
+		aside[]={-0.96135616,4.0551095e-007,-0.27532691};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"A3_Characters_F",
-	"A3_Weapons_F",
-	"A3_Characters_F_Orange_Facewear",
-	"A3_Weapons_F_Items",
-	"A3_Characters_F_Exp_Civil",
 	"A3_Characters_F_Exp",
+	"A3_Characters_F_Exp_Civil",
 	"A3_Ui_F",
 	"A3_Modules_F_Intel",
 	"A3_Modules_F_Curator_Curator",
@@ -41,64 +37,43 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=6;
 		class Item0
-		{
-			className="A3_Characters_F";
-			name="Arma 3 Alpha - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item1
-		{
-			className="A3_Weapons_F";
-			name="Arma 3 Alpha - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item2
-		{
-			className="A3_Characters_F_Orange";
-			name="Arma 3 Orange - Characters and Clothing";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item3
 		{
 			className="A3_Characters_F_Exp";
 			name="Arma 3 Apex - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item1
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item2
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item3
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item7
+		class Item4
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item5
 		{
 			className="ryanzombiesfunctions";
 			name="ryanzombiesfunctions";
@@ -271,72 +246,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Commoner1_1";
-								isBackpack=0;
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_white_F";
-						};
 					};
 					id=10;
-					type="C_man_1_1_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02GRE";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					type="B_GEN_Commander_F";
 				};
 				class Item1
 				{
@@ -351,21 +263,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Man_casual_2_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_yellow_F";
-						};
 					};
 					id=58;
-					type="C_Man_casual_2_F";
+					type="B_GEN_Commander_F";
 				};
 				class Item2
 				{
@@ -380,62 +280,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_man_sport_2_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							gps="ItemGPS";
-							goggles="G_Respirator_yellow_F";
-						};
 					};
 					id=60;
-					type="C_Man_casual_3_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male02GRE";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					type="B_GEN_Commander_F";
 				};
 				class Item3
 				{
@@ -450,21 +297,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_man_sport_1_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_blue_F";
-						};
 					};
 					id=62;
-					type="C_man_sport_1_F";
+					type="B_GEN_Commander_F";
 				};
 				class Item4
 				{
@@ -479,21 +314,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_man_sport_2_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_white_F";
-						};
 					};
 					id=64;
-					type="C_man_sport_2_F";
+					type="B_GEN_Commander_F";
 				};
 				class Item5
 				{
@@ -508,21 +331,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_man_sport_3_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_blue_F";
-						};
 					};
 					id=66;
-					type="C_man_sport_3_F";
+					type="B_GEN_Commander_F";
 				};
 				class Item6
 				{
@@ -537,21 +348,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Man_casual_4_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_white_F";
-						};
 					};
 					id=68;
-					type="C_Man_casual_4_F";
+					type="B_GEN_Commander_F";
 				};
 				class Item7
 				{
@@ -566,21 +365,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Man_casual_5_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_blue_F";
-						};
 					};
 					id=70;
-					type="C_Man_casual_5_F";
+					type="B_GEN_Commander_F";
 				};
 				class Item8
 				{
@@ -595,21 +382,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Man_casual_6_F";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_yellow_F";
-						};
 					};
 					id=72;
-					type="C_Man_casual_6_F";
+					type="B_GEN_Commander_F";
 				};
 				class Item9
 				{
@@ -624,21 +399,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Poloshirt_blue";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_white_F";
-						};
 					};
 					id=74;
-					type="C_man_polo_1_F";
+					type="B_GEN_Commander_F";
 				};
 				class Item10
 				{
@@ -653,63 +416,9 @@ class Mission
 					{
 						description="Survivor";
 						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="U_C_Poloshirt_burgundy";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							goggles="G_Respirator_yellow_F";
-						};
 					};
 					id=76;
-					type="C_man_polo_2_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male05GRE";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.04;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					type="B_GEN_Commander_F";
 				};
 			};
 			class Attributes
