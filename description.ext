@@ -197,7 +197,7 @@ class Params
 		title = "Number of hostiles per wave";
 		values[] = {1,2,3,4};
 		texts[] = {"Low (Easiest)", "Normal", "Double", "Tripple (Hardest)"};
-		default = 2;
+		default = 3;
 	};
 
 	class HOSTILE_TEAM_MULTIPLIER
@@ -205,7 +205,7 @@ class Params
 		title = "Extra hostiles per player";
 		values[] = {50, 100, 150, 200};
 		texts[] = {"0.5", "1", "1.5", "2"};
-		default = 50;
+		default = 200;
 	};
 
 	class DOWN_TIME
@@ -213,7 +213,7 @@ class Params
 		title = "Time between rounds";
 		values[] = {0, 15, 30, 60, 90, 120, 180, 240, 300};
 		texts[] = {"0", "15 Seconds", "30 Seconds", "1 Minute", "1 Minute 30 Seconds", "2 Minutes", "3 Minutes", "4 Minutes", "5 Minutes"};
-		default = 30;
+		default = 0;
 	};
 
 	class MAX_WAVES
@@ -229,7 +229,7 @@ class Params
 		title = "Medikits in Bulwark";
 		values[] = {0, 1, 3, 4, 5, 6, 7, 8};
 		texts[] = {"None", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight"};
-		default = 3;
+		default = 8;
 	};
 
 	class PLAYER_STARTMAP
@@ -261,7 +261,7 @@ class Params
 		title = "Special Waves (suicide bombers)";
 		values[] = {0, 1};
 		texts[] = {"No", "Yes"};
-		default = 1;
+		default = 0;
 	};
 
 	class ZOMBIE_LABEL_SPACE
@@ -285,7 +285,7 @@ class Params
 		title = "Zombie Health";
 		values[] = {4,3,1,2};
 		texts[] = {"Weakest (Easiest)", "Weak", "Strong", "Strongest (Hardest)"};
-		default = 3;
+		default = 2;
 	};
 
 	class ZOMBIE_JUMP
@@ -293,7 +293,7 @@ class Params
 		title = "Zombies Jumping";
 		values[] = {1,5,4,3,2};
 		texts[] = {"No", "Very Short", "Short", "Normal", "Far"};
-		default = 4;
+		default = 3;
 	};
 
 	class ZOMBIE_DEMON_JUMP
@@ -301,7 +301,7 @@ class Params
 		title = "Demons Jumping";
 		values[] = {1,5,4,3,2};
 		texts[] = {"No", "Very Short", "Short", "Normal", "Far"};
-		default = 4;
+		default = 2;
 	};
 
 	class ZOMBIE_HEADSHOT_ONLY
@@ -309,7 +309,7 @@ class Params
 		title = "Only Headshots Kill Zombies";
 		values[] = {1,2};
 		texts[] = {"No", "yes"};
-		default = 1;
+		default = 0;
 	};
 
 	class BULWARK_LABEL_SPACE
@@ -341,7 +341,7 @@ class Params
 		title = "Minimum spawn room size";
 		values[] = {10, 13, 15, 18, 20};
 		texts[] = {"10m²", "13m²", "15m²", "18m²", "20m²"};
-		default = 13;
+		default = 10;
 	};
 
 	class BULWARK_LANDRATIO
@@ -349,15 +349,15 @@ class Params
 		title = "Minimum land area (To avoid spawning on a dock)";
 		values[] = {60, 70, 80, 90, 100};
 		texts[] = {"60%","70%","80%","90%","100%"};
-		default = 90;
+		default = 60;
 	};
 
 	class LOOT_HOUSE_DENSITY
 	{
 		title = "Minimum number of buildings in Bulwark radius";
-		values[] = {5, 10, 15, 20, 30};
-		texts[] = {"5","10","15","20","30"};
-		default = 20;
+		values[] = {1, 3, 5, 10, 15, 20, 30};
+		texts[] = {"1", "3", "5","10","15","20","30"};
+		default = 3;
 	};
 
 	class LOOT_HOUSE_DISTRIBUTION
@@ -365,7 +365,7 @@ class Params
 		title = "Loot distribution";
 		values[] = {1, 2, 3, 4};
 		texts[] = {"Every building", "Every second building", "Every third building", "Every fourth building"};
-		default = 2;
+		default = 1;
 	};
 
 	class LOOT_ROOM_DISTRIBUTION
@@ -373,15 +373,15 @@ class Params
 		title = "Loot density";
 		values[] = {1, 2, 3, 4};
 		texts[] = {"Every location", "Every second location", "Every third location", "Every fourth location"};
-		default = 2;
+		default = 4;
 	};
 
 	class LOOT_SUPPLYDROP
 	{
 		title = "Supply drop distance from centre";
-		values[] = {0, 25, 50, 75};
-		texts[] = {"Dead centre", "25%", "50%", "75%"};
-		default = 25;
+		values[] = {0, 5, 25, 50, 75};
+		texts[] = {"Dead centre", "5%", "25%", "50%", "75%"};
+		default = 5;
 	};
 
 	class DAY_TIME_FROM
@@ -389,7 +389,7 @@ class Params
 		title = "Earliest time of day";
 		values[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22};
 		texts[] = {"2am","4am","6am","8am","10am","Midday", "2pm", "4pm", "6pm", "8pm", "10pm"};
-		default = 8;
+		default = 6;
 	};
 
 	class DAY_TIME_TO
@@ -397,7 +397,7 @@ class Params
 		title = "Latest time of day";
 		values[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22};
 		texts[] = {"2am","4am","6am","8am","10am","Midday", "2pm", "4pm", "6pm", "8pm", "10pm"};
-		default = 16;
+		default = 20;
 	};
 
 	class POWERUP_LABEL_SPACE
@@ -495,7 +495,7 @@ class Params
 			"Medikit",
 			"First Aid Kit / Medikit"
 		};
-		default = 2;
+		default = 0;
 		function = "bis_fnc_paramReviveRequiredItems";
 	};
 

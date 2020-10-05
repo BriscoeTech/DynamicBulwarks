@@ -226,7 +226,7 @@ class Mission
 	assetType="Free";
 	class Intel
 	{
-		briefingName="Dynamic Bulwarks Z";
+		briefingName="Dynamic Bulwarks Zombies";
 		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
@@ -378,7 +378,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						description="Marksman";
+						description="Survivor";
 						isPlayable=1;
 						class Inventory
 						{

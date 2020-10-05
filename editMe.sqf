@@ -9,7 +9,7 @@
 /* Attacker Waves */
 
 /* Available Lists: List_ZombieSpider List_ZombieCrawler List_ZombieFast List_ZombieMedium List_ZombieSlow List_ZombieBoss List_ZombieWalker */
-HOSTILE_LEVEL_1 = List_ZombieSpider;  // Wave 0 >
+HOSTILE_LEVEL_1 = List_ZombieWalker;  // Wave 0 >
 HOSTILE_LEVEL_2 = List_ZombieMedium;    // Wave 3 >
 HOSTILE_LEVEL_3 = List_ZombieFast;    // Wave 8 >
 HOSTILE_LEVEL_4 = List_ZombieBoss;    // Wave 15 >
