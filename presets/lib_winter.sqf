@@ -145,7 +145,8 @@ lowSpecialWave_list = [
 //	"switcharooWave",
 //  "specCivs",
 //	"ptrdWave",
-	"nightWave"
+//	"nightWave"
+	"mgWave"
 	];
 //comment out the waves you don't like. Don't forget to remove the , behind the last entry
 //list of all special waves you can get on higher waves
@@ -153,10 +154,10 @@ specialWave_list= [
 //	"specCivs",
 	"fogWave",
 //	"demineWave",
-	"switcharooWave",
+//	"switcharooWave",
 //	"suicideWave",
 	"specMortarWave",
-	"nightWave",
+//	"nightWave",
 	"defectorWave",
     "mgWave",
     "sniperWave",

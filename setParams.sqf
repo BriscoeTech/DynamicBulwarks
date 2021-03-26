@@ -24,6 +24,7 @@ SCORE_DAMAGE_BASE = ("SCORE_DAMAGE_BASE" call BIS_fnc_getParamValue);   // Extra
 /* Time of Day*/
 DAY_TIME_FROM = ("DAY_TIME_FROM" call BIS_fnc_getParamValue);
 DAY_TIME_TO = ("DAY_TIME_TO" call BIS_fnc_getParamValue);
+DAY_TIME_ACCEL = ("DAY_TIME_ACCEL" call BIS_fnc_getParamValue);
 // Check for sneaky inverted configuration. FROM should always be before TO.
 if (DAY_TIME_FROM > DAY_TIME_TO) then {
     DAY_TIME_FROM = DAY_TIME_TO - 2;

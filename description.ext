@@ -427,7 +427,7 @@ class Params
 		title = "Earliest time of day";
 		values[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22};
 		texts[] = {"2am","4am","6am","8am","10am","Midday", "2pm", "4pm", "6pm", "8pm", "10pm"};
-		default = 6;
+		default = 4;
 	};
 
 	class DAY_TIME_TO
@@ -435,7 +435,15 @@ class Params
 		title = "Latest time of day";
 		values[] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22};
 		texts[] = {"2am","4am","6am","8am","10am","Midday", "2pm", "4pm", "6pm", "8pm", "10pm"};
-		default = 20;
+		default = 4;
+	};
+	
+	class DAY_TIME_ACCEL
+	{
+		title = "Day Speed Multiplier";
+		values[] = {6, 12, 24, 48, 72};
+		texts[] = {"x6(4h)","x12(2h)","x24(1h)","x48(30m))","x72(20m))"};
+		default = 48;
 	};
 
 	class POWERUP_LABEL_SPACE
